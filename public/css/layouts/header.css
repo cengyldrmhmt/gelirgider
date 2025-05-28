@@ -1,0 +1,112 @@
+.navbar {
+    background-color: #2c3e50;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1030;
+}
+
+body {
+    padding-top: 76px; /* Header yüksekliği (56px) + ekstra boşluk (20px) */
+}
+
+.navbar-brand {
+    color: #ecf0f1 !important;
+    font-weight: bold;
+}
+
+.nav-link {
+    color: #ecf0f1 !important;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #3498db !important;
+}
+
+.dropdown-menu {
+    background-color: #2c3e50;
+    border: none;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    border-radius: 8px;
+    margin-top: 5px;
+}
+
+.dropdown-item {
+    color: #ecf0f1 !important;
+    padding: 10px 15px;
+    transition: all 0.3s ease;
+}
+
+.dropdown-item:hover {
+    background-color: #34495e;
+    color: #3498db !important;
+}
+
+.dropdown-header {
+    color: #bdc3c7 !important;
+    font-weight: bold;
+    border-bottom: 1px solid #34495e;
+    margin-bottom: 5px;
+}
+
+.dropdown-divider {
+    border-color: #34495e;
+}
+
+/* Bildirim dropdown özel stilleri */
+.notification-dropdown {
+    background-color: #ffffff !important;
+    color: #333 !important;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+.notification-dropdown .dropdown-header {
+    background-color: #f8f9fa !important;
+    color: #333 !important;
+    border-bottom: 1px solid #dee2e6;
+    padding: 12px 16px;
+    margin: 0;
+    font-weight: 600;
+}
+
+.notification-dropdown .dropdown-item {
+    color: #333 !important;
+    padding: 12px 16px;
+    border-bottom: 1px solid #f1f3f4;
+    transition: background-color 0.2s ease;
+}
+
+.notification-dropdown .dropdown-item:hover {
+    background-color: #f8f9fa !important;
+    color: #333 !important;
+}
+
+.notification-dropdown .dropdown-item.bg-light {
+    background-color: #e3f2fd !important;
+}
+
+.notification-dropdown .dropdown-divider {
+    border-color: #dee2e6;
+    margin: 0;
+}
+
+.notification-dropdown .sticky-top,
+.notification-dropdown .sticky-bottom {
+    background-color: #ffffff !important;
+    z-index: 1020;
+}
+
+input[type="number"] {
+    appearance: textfield;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0;
+} 

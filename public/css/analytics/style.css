@@ -1,0 +1,203 @@
+/* Analytics Styles */
+.analytics-card {
+    transition: all 0.3s ease;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+}
+
+.analytics-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.analytics-card .card-header {
+    background: #f8f9fc;
+    border-bottom: 1px solid #e3e6f0;
+    padding: 1rem;
+}
+
+.analytics-card .card-body {
+    padding: 1.5rem;
+}
+
+/* Analytics Charts */
+.analytics-chart {
+    height: 300px;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.analytics-chart canvas {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+/* Analytics Metrics */
+.analytics-metrics {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.analytics-metrics .metric-card {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.analytics-metrics .metric-title {
+    font-size: 0.9rem;
+    color: #6c757d;
+    margin-bottom: 0.5rem;
+}
+
+.analytics-metrics .metric-value {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.analytics-metrics .metric-change {
+    font-size: 0.8rem;
+}
+
+.analytics-metrics .metric-change.positive {
+    color: #1cc88a;
+}
+
+.analytics-metrics .metric-change.negative {
+    color: #e74a3b;
+}
+
+/* Analytics Filters */
+.analytics-filters {
+    background: #f8f9fc;
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+.analytics-filters .form-group {
+    margin-bottom: 1rem;
+}
+
+.analytics-filters .form-label {
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.analytics-filters .form-control:focus {
+    border-color: #4e73df;
+    box-shadow: 0 0 0 0.2rem rgba(78,115,223,0.25);
+}
+
+/* Analytics Tables */
+.analytics-table {
+    margin-top: 2rem;
+}
+
+.analytics-table .table th {
+    background-color: #f8f9fc;
+    border-bottom: 2px solid #e3e6f0;
+}
+
+.analytics-table .table td {
+    vertical-align: middle;
+}
+
+/* Analytics Insights */
+.analytics-insights {
+    margin-top: 2rem;
+}
+
+.analytics-insights .insight-card {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    border-left: 4px solid #4e73df;
+}
+
+.analytics-insights .insight-title {
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.analytics-insights .insight-description {
+    color: #6c757d;
+    font-size: 0.9rem;
+}
+
+/* Analytics Loading */
+.analytics-loading {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255,255,255,0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.analytics-loading .spinner {
+    width: 3rem;
+    height: 3rem;
+}
+
+/* Analytics Tooltips */
+.analytics-tooltip {
+    position: absolute;
+    background: rgba(0,0,0,0.8);
+    color: #fff;
+    padding: 0.5rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    pointer-events: none;
+    z-index: 1000;
+}
+
+/* Analytics Legend */
+.analytics-legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.analytics-legend .legend-item {
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+}
+
+.analytics-legend .legend-color {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 2px;
+    margin-right: 0.5rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .analytics-metrics {
+        grid-template-columns: 1fr;
+    }
+    
+    .analytics-chart {
+        height: 200px;
+    }
+    
+    .analytics-filters .form-group {
+        margin-bottom: 1.5rem;
+    }
+    
+    .analytics-insights .insight-card {
+        margin-bottom: 1.5rem;
+    }
+} 

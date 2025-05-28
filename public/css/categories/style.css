@@ -1,0 +1,138 @@
+/* Category Styles */
+.category-card {
+    transition: all 0.3s ease;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.category-card .card-header {
+    background: #f8f9fc;
+    border-bottom: 1px solid #e3e6f0;
+    padding: 1rem;
+}
+
+.category-card .card-body {
+    padding: 1.5rem;
+}
+
+.category-icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+.category-icon i {
+    font-size: 1.2rem;
+    color: white;
+}
+
+.category-name {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.category-type {
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+.category-type.income {
+    color: #1cc88a;
+}
+
+.category-type.expense {
+    color: #e74a3b;
+}
+
+/* Category Form Styles */
+.category-form .form-label {
+    font-weight: 500;
+}
+
+.category-form .form-control:focus {
+    border-color: #4e73df;
+    box-shadow: 0 0 0 0.2rem rgba(78,115,223,0.25);
+}
+
+.category-form .icon-preview {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+/* Category List Styles */
+.category-list {
+    margin-top: 2rem;
+}
+
+.category-list .table th {
+    background-color: #f8f9fc;
+    border-bottom: 2px solid #e3e6f0;
+}
+
+.category-list .table td {
+    vertical-align: middle;
+}
+
+/* Category Actions */
+.category-actions .btn {
+    margin-right: 0.5rem;
+}
+
+.category-actions .btn:last-child {
+    margin-right: 0;
+}
+
+/* Category Stats */
+.category-stats {
+    margin-bottom: 2rem;
+}
+
+.category-stats .stat-card {
+    border-left: 4px solid #4e73df;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.category-stats .stat-card.income {
+    border-left-color: #1cc88a;
+}
+
+.category-stats .stat-card.expense {
+    border-left-color: #e74a3b;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .category-card {
+        margin-bottom: 1rem;
+    }
+    
+    .category-actions .btn {
+        margin-bottom: 0.5rem;
+    }
+    
+    .category-icon {
+        width: 32px;
+        height: 32px;
+    }
+    
+    .category-icon i {
+        font-size: 1rem;
+    }
+} 

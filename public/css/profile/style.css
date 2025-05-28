@@ -1,0 +1,73 @@
+.profile-avatar {
+    margin-bottom: 1.5rem;
+}
+
+.profile-avatar img {
+    border: 3px solid #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.timeline-item {
+    position: relative;
+    padding-left: 1rem;
+    border-left: 2px solid #e9ecef;
+}
+
+.timeline-item:last-child {
+    border-left: none;
+}
+
+.timeline-item .badge {
+    position: absolute;
+    left: -0.5rem;
+    top: 0;
+}
+
+.card {
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border: none;
+    margin-bottom: 1rem;
+}
+
+.card-header {
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+}
+
+.card-title {
+    margin-bottom: 0;
+    color: #333;
+}
+
+.bg-success {
+    background-color: #28a745 !important;
+}
+
+.bg-danger {
+    background-color: #dc3545 !important;
+}
+
+.bg-info {
+    background-color: #17a2b8 !important;
+}
+
+.bg-warning {
+    background-color: #ffc107 !important;
+}
+
+.text-white {
+    color: #fff !important;
+}
+
+.fa-3x {
+    font-size: 3em;
+}
+
+.list-unstyled li {
+    margin-bottom: 0.5rem;
+}
+
+.badge {
+    padding: 0.5em 0.75em;
+    font-weight: 500;
+} 

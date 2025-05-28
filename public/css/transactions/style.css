@@ -1,0 +1,95 @@
+/* Transactions Styles */
+.transaction-card {
+    transition: all 0.3s ease;
+    border: 1px solid #e3e6f0;
+    border-radius: 0.35rem;
+    margin-bottom: 1rem;
+}
+
+.transaction-card:hover {
+    box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.15);
+    transform: translateY(-2px);
+}
+
+.transaction-amount {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.transaction-amount.income {
+    color: #1cc88a;
+}
+
+.transaction-amount.expense {
+    color: #e74a3b;
+}
+
+.transaction-date {
+    color: #858796;
+    font-size: 0.85rem;
+}
+
+.transaction-category {
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.transaction-description {
+    color: #5a5c69;
+    margin: 0.5rem 0;
+}
+
+.transaction-actions {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.transaction-card:hover .transaction-actions {
+    opacity: 1;
+}
+
+.transaction-filter {
+    background-color: #f8f9fc;
+    border-radius: 0.35rem;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.transaction-filter .form-group {
+    margin-bottom: 1rem;
+}
+
+.transaction-table th {
+    background-color: #f8f9fc;
+    border-bottom: 2px solid #e3e6f0;
+}
+
+.transaction-table td {
+    vertical-align: middle;
+}
+
+.transaction-status {
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.transaction-status.pending {
+    background-color: #f6c23e;
+    color: #fff;
+}
+
+.transaction-status.completed {
+    background-color: #1cc88a;
+    color: #fff;
+}
+
+.transaction-status.cancelled {
+    background-color: #e74a3b;
+    color: #fff;
+} 

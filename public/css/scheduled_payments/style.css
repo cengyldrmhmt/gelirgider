@@ -1,0 +1,24 @@
+.sidebar {
+    min-height: 100vh;
+    background-color: #343a40;
+    padding-top: 20px;
+}
+
+.sidebar a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+.sidebar a:hover {
+    background-color: #495057;
+}
+
+.main-content {
+    padding: 20px;
+}
+
+.progress {
+    height: 20px;
+} 
